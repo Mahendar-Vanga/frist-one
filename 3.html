@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Motive Images Website </title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+position:relative;
+display:felx;
+justify-content:center;
+align-items:center;
+
+
+}
+
+.contianer{
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:row;
+background-color:#ff1a75;
+top:20px;
+height:auto;
+}
+.contianer:hover{
+/*background-color: #00ffcc;*/
+background:url(img/bg.png);
+ /*background-position: center; Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover;  /*Resize the background image to cover the entire container */
+}
+
+.contianer .content{
+width:300px;
+height:800px;
+display:flex;
+position:relative;
+justify-content:center;
+align-items:center;
+margin-top:125%;
+margin-left:5%;
+margin-right:5%;
+margin-bottom:100%;
+}
+
+.contianer .content .imgbx{
+width:100px;
+height:500px;
+position:absolute;
+justify-content:center;
+align-items:center;
+margin-top:30%;
+margin-right:5%;
+
+}
+
+.contianer .content .imgbx img{
+width:400px;
+height:700px;
+position:absolute;
+margin-top:10%;
+margin-left:100%
+justify-content:center;
+align-items:center;
+transition:linear 0.9s;
+overflow:hidden;
+border:2px soild #111;
+border-radius:20px;
+}
+.contianer .content .imgbx img:nth-child(odd){
+
+opacity:1;
+position:absolute;
+justify-content:center;
+align-items:center;
+margin-left:10%
+
+}
+.contianer .content .imgbx img:hover:nth-child(odd){
+
+opacity:0;
+position:absolute;
+justify-content:center;
+align-items:center;
+margin-left:10%
+border-radius:20px;
+}
+
+.contianer .content .imgbx img:nth-child(even){
+opacity:0;
+position:absolute;
+justify-content:center;
+align-items:center;
+margin-left:10%
+
+}
+.contianer .content .imgbx img:hover:nth-child(even){
+opacity:1;
+border:2px soild yellow;
+border-radius:5px;
+margin-left:10%
+
+}
+
+
+
+.contianer .content .imgbx .txt h2{
+dispaly:flex;
+position:relative;
+color:white;
+justify-content:center;
+align-items:center;
+top:600px;
+bottom:200px;
+text-align: center;
+text-transition:all linear 0.7s;
+
+opacity:0;
+margin:10px;
+padding:10px;
+
+}
+.contianer .content .imgbx:hover .txt h2{
+opacity:1;
+backdrop-filter:bulr(5px);
+color:red;
+text-align:center;
+width:100%;
+height:100%;
+}
+.contianer .content .imgbx:hover .txt h2 span{
+color:white;
+font-size:50px;
+font-weight: 900 bold;
+}
+
+.contianer .content .imgbx:hover{
+background-color:#66ffcc;
+width:500px;
+height:800px;
+position:absolute;
+align-items:center;
+justify-content:center;
+margin-top:160%;
+margin-right:-50%;
+border:3px soild #fff;
+border-radius:7%;
+}
+</style>
+</head>
+<body>
+<div class="contianer">
+<div class="content">	
+<div class="imgbx">
+		<img src="img/1.jpg">
+		<img src="img/2.jpg">
+		<div class="txt"><h2 align="center">Don't <span>Scarifice</span></h2></div>
+	</div></div>
+<div class="content">
+<div class="imgbx">
+		<img src="img/3.jpg">
+		<img src="img/4.jpg">
+		<div class="txt"><h2>Think <span>Positive</span></h2></div>
+	</div>	</div>
+<div class="content">
+<div class="imgbx">
+		<img src="img/5.jpg">
+		<img src="img/6.jpg">
+		<div class="txt"><h2>Be a <span>King</span></h2></div>
+	</div>	
+
+</div>
+</div>
+</body>
+</html>
